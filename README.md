@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12392151&assignment_repo_type=AssignmentRepo)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -31,3 +32,8 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+- the worst case complexity is when we will have to search through every possible edge of every node to get a complexity of $O(V + E)$
+
+- for example, if we search for a target node from a start node that connects TO nothing, we will have to search though the list of edges for every node in our adjacency list and check for a connection. Since we wont find it, we will have to search every node (O(V)) and every edge of that node (O(V+E))
+
