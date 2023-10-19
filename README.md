@@ -32,3 +32,8 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+- the worst case complexity is when we will have to search through every possible edge of every node to get a complexity of $O(V + E)$
+
+- for example, if we search for a target node from a start node that connects TO nothing, we will have to search though the list of edges for every node in our adjacency list and check for a connection. Since we wont find it, we will have to search every node (O(V)) and every edge of that node (O(V+E))
+
